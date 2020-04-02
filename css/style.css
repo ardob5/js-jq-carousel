@@ -1,0 +1,51 @@
+/* regole generali */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.collections {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #FFF;
+}
+
+.collections img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.collections img.active {
+  display: inline-block;
+}
+
+.prev-img, .next-img {
+  padding: 30px;
+  font-size: 2em;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  background-color: rgba(153, 187, 242, 0.5);
+}
+
+.prev-img:hover, .next-img:hover {
+  cursor: pointer;
+  background-color: rgba(153, 187, 242, 0.8);
+}

@@ -46,11 +46,11 @@ $(document).ready(function(){
   function onBall(){
     var imgActive = $('.collections img.active');
     var clickBallActive = $('.menu-icons i.active');
+    
     clickBallActive.removeClass('active');
     imgActive.removeClass('active');
 
     var indxBall = $('.menu-icons i').index(this);
-    console.log('.menu-icons i');
 
     $('.collections img').eq(indxBall).addClass('active');
     $(this).addClass('active');
